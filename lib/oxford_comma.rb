@@ -10,7 +10,7 @@ elsif array.size==3
 last_array=array.last
 array.pop
 first_string=array.join(", ")
-second_string=first_string << " and #{last_array}"
+second_string=first_string << ", and #{last_array}"
 else last_array=array.last
   array.pop
   first_string=array.join(". ")
