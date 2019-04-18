@@ -1,7 +1,10 @@
 def oxford_comma(array)
-new_array=array.pop
-first_string=new_array.join(", ")
 last_string=array.last
-second_string=first_string << "and #{last_string}"
+array.pop
+first_string=array.join(", ")
+
+second_string=first_string << ", and #{last_string}"
 return second_string
 end
+array=["fiddleheads","okra","kohlrabi"]
+oxford_comma(array)
